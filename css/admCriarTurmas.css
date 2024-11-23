@@ -1,0 +1,364 @@
+/* Corpo da página */
+body {
+    font-family: sans-serif;
+    background-color:#fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111111;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px 10px 0 0;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%; /* Ajustado para 100% da largura */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+/* Título da barra de navegação */
+.navbar h3 {
+    color: coral;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+/* Texto do span na navbar */
+.navbar span {
+    color: cornflowerblue;
+    font-size: 30px;
+}
+
+/* Botão de logout */
+.logout-button {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento */
+    border: none; /* Remove bordas */
+    background-color: rgb(241, 83, 10); /* Cor de fundo laranja */
+    border-radius: 40px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de "mão" */
+    transition: background-color 0.3s; /* Transição suave */
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Negrito */
+    width: 50px;
+    text-align: center;
+}
+
+/* Hover do botão de logout */
+.logout-button:hover {
+    background-color: rgb(245, 4, 4);
+    font-size: 18px;
+    padding: 12px 16px;
+}
+
+/* Texto do menu */
+.menu-text {
+    font-size: 21px;
+    color: #c26d1d;
+}
+
+/* Sidebar (menu lateral) */
+.sidebar {
+    position: fixed; /* Mudança para 'fixed' para que se mova com o scroll */
+    top: 83px; /* Ajustado para começar logo após a navbar */
+    width: 220px;
+    height: calc(100% - 83px); /* Ajusta a altura da sidebar para a tela inteira menos o tamanho da navbar */
+    background-color: #534f4f;
+    color: white;
+    padding: 20px;
+    margin-left: -8px;
+    z-index: 999; /* Garante que a sidebar fique abaixo da navbar */
+}
+
+/* Botões da sidebar */
+.sidebar-btn {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: #0a356e;
+    padding: 9px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Hover dos botões da sidebar */
+.sidebar-btn:hover {
+    background-color: #007bff;
+}
+
+
+
+
+
+/* ______________________ Conenter de criação das turmas______________________-- */
+
+
+
+/* Contêiner principal */
+.turmas {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 77%;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 18%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 5%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+.turmas h1 {
+    text-align: center;
+    color:#111111;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Subtítulos */
+.turmas h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Formulário para criar turma */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 40%;
+    margin: auto;
+}
+
+form label {
+    display:flex;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #FF7F3E;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FF9A6E;
+}
+
+/* Tabela das turmas */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden; /* Evita bordas arredondadas que saem da tabela */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #127bd1;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Mensagens de tabela */
+table td[colspan="5"] {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+/* Buttons */
+
+
+.btn-adiciona {
+    background-color: #127bd1;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+/* ___________________________  VISUALIZAÇÃO DAS TURMAS________________________________- */
+
+
+.turmas-container {
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro do container */
+    background-color:#4682B4;
+    border-radius: 15px;
+    width: 50%; /* Ajusta a largura para uma apresentação mais equilibrada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destaque */
+    margin-top: 10%;
+}
+
+.turmas-container h2 {
+    color:#fff; /* Altera a cor do título para branco */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.btn_turmas {
+    display: block;
+    width: 80%; /* Reduz a largura do botão para deixar espaço nas laterais */
+    padding: 12px;
+    margin: 8px 0; /* Espaçamento entre os botões */
+    background-color: rgb(233, 94, 44);
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold; /* Destaca o texto do botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza o efeito de hover */
+}
+
+.btn_turmas:hover {
+    background-color:coral;
+    transform: scale(1.02); /* Efeito leve de zoom ao passar o mouse */
+}
+
+.turmas-container a {
+    text-decoration: none; /* Remove a linha de sublinhado dos links */
+    width: 100%; /* Faz com que o link ocupe toda a largura do botão */
+    display: flex;
+    justify-content: center; /* Centraliza o link no container */
+}
+
+
+/* ___________________________Listar das turmas com alunos e professor__________________ */
+
+
+/* Definições gerais de estilo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #444;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+/* Estilo para a seção da turma */
+.turma-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Estilo para a lista de alunos */
+.alunos-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alunos-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+.alunos-list li:hover {
+    background-color: #e9f1f7;
+}
+
+/* Estilo para quando não há dados */
+p {
+    font-size: 1rem;
+    color: #e74c3c;
+    text-align: center;
+}
+
+

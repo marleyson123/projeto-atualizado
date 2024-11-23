@@ -1,0 +1,624 @@
+body {
+    font-family: sans-serif;
+    background-color: rgba(107, 103, 103, 0.7); /* Preto com 50% de opacidade */
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px 10px 0 0;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+}
+
+.navbar h3 {
+    color: coral;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.navbar span {
+    color: cornflowerblue;
+    font-size: 30px;
+}
+
+.logout-button {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Define a cor do texto */
+    padding: 10px 15px; /* Adiciona espaçamento */
+    border: none; /* Remove bordas */
+    background-color:rgb(241, 83, 10); /* Define a cor de fundo */
+    border-radius: 40px; /* Deixa as bordas arredondadas */
+    cursor: pointer; /* Mostra um cursor de "mão" */
+    transition: background-color 0.3s; /* Suaviza a mudança de cor */
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Define a espessura da fonte como "bold" para deixá-la em negrito */
+    width: 50px;
+    text-align: center;
+}
+
+.logout-button:hover {
+    background-color:rgb(245, 4, 4);
+    font-size:18px ;
+    padding: 12px 16px;
+
+}
+.menu-text{
+    font-size: 21px;
+    color: #c26d1d;
+}
+
+.sidebar {
+    position: fixed;
+    top: 75px;
+    width: 220px;
+    height: calc(100% - 60px);
+    background-color: #444040;
+    color: white;
+    padding: 20px;
+    margin-left: -8px;
+}
+
+.sidebar-btn {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: #0a356e;
+    padding: 9px;
+    border-radius: 10px;
+    transition: 0.3s;
+    
+}
+
+.sidebar-btn:hover{
+    background-color: #007bff;
+}
+/* ------------------- formatação da tabela----------------------------------------------- */
+
+/* Estilo da tabela */
+table {
+    width: 80%;
+    margin: 5% auto;
+    border-collapse: collapse;
+    background-color: #666;
+    margin-top: 8%;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-left: 16%;
+}
+
+.pesquisar{
+    border: 1px solid black;
+    width: 100px;
+}
+
+.titulo-table{
+    color: #000;
+    font-size: 15px;
+    margin-top:10px; 
+    display: flex;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid rgb(19, 18, 18);
+    text-align:center;
+    font-size: 18px;
+}
+
+th {
+    background-color: #302f2f;
+    color: white;
+    font-weight: bold;
+    
+}
+
+td {
+    background-color: #756d6d;
+    color: white;
+}
+
+tr:nth-child(even) td {
+    background-color: #756d6d;
+    color: white;
+}
+
+/* Estilo dos botões */
+.btn_exclir, .btn_alterar {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_exclir {
+    background-color: #df590c;
+}
+
+.btn_exclir:hover {
+    background-color: #ee220c;
+}
+
+.btn_alterar {
+    background-color: #1a5dda;
+}
+
+.btn_alterar:hover {
+    background-color: #013a5f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* __________________________ Perfil do ADM ______________________________________________ */
+
+.container-maior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#4682B4;
+    font-family: Arial, sans-serif;
+    height: 560px;
+    max-width: 400px;
+    margin-left: 40%;
+    margin-top: 6%;
+    border-radius: 20px;
+}
+
+.profile {
+    width: 75%;
+    padding: 20px;
+    border-radius: 10px;
+    height: 500px;
+    border: 2px solid #444;
+   
+}
+
+.profile legend {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid  #444;
+    background-color: #444;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.profile label {
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+   
+}
+
+.profile input[type="text"],
+.profile input[type="email"],
+.profile input[type="password"] {
+    width: 92%;
+    padding: 8px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color:aliceblue; /* Bege */
+    color: #333;
+    font-size: 16px;
+}
+
+#submit-input {
+    width: 60%;
+    padding: 12px;
+    background-color: rgb(240, 80, 22);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    
+}
+
+#submit-input:hover {
+    background-color: #444;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+/* Estilo do campo de foto circular e clicável */
+.foto-container {
+    position: relative; /* Permite o posicionamento absoluto do ícone */
+    display: inline-block; /* Faz com que o contêiner ajuste o tamanho da imagem */
+ 
+    
+}
+
+.foto-label {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px; /* Largura do contêiner da foto */
+    height: 200px; /* Altura do contêiner da foto */
+    border: 1px solid #333; /* Borda do contêiner da foto */
+    margin-left: 70%;
+    background-color:darkgray;
+    
+}
+
+#foto-preview {
+    width: 100%; /* Para que a imagem preencha o contêiner */
+    height: 100%; /* Para que a imagem preencha o contêiner */
+    object-fit: cover; /* Para manter a proporção da imagem */
+}
+
+.icon-label {
+    position: absolute; /* Para posicionar o ícone em relação ao contêiner da foto */
+    left: 140%;
+    margin-top: 75%;
+    cursor: pointer; /* Mostra que é clicável */
+    color: #333; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    transition: transform 0.2s; /* Transição ao hover */
+}
+
+.icon-label:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+
+
+
+
+
+/* ________________Formulário de cadastro do Prof/RES__________________-- */
+
+/* Estilo geral do conteúdo do formulário */
+.form-content {
+    max-width: 400px; /* Define uma largura máxima fixa para o formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente na tela */
+    padding: 20px; /* Adiciona espaçamento interno */
+ 
+    background-color:#4682B4; /* Define cor de  fundo  */
+    border: 1px solid rgba(0, 0, 0, 0.6); /* Adiciona uma borda laranja ao redor */
+    border-radius: 15px; /* Arredonda os cantos da borda */
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.6); /* Adiciona uma leve sombra para destaque */
+    color:rgb(8, 8, 8);
+    max-height: 500px;
+    margin-top: 8%;
+
+   
+}
+
+/* Estilo do título do formulário */
+.form-content h2 {
+    font-size: 1.5em; /* Define o tamanho da fonte do título */
+    color:#0a0a0a; /* Define a cor preta do título */
+    text-align: center; /* Centraliza o texto do título */
+    margin-bottom: 25px; /* Espaçamento inferior para separar do conteúdo */
+    margin-top: 5%;
+}
+
+/* Estilo das labels */
+label {
+    display: block; /* Coloca a label em uma linha separada */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: rgb(15, 15, 15); /* Define a cor preta para as labels */
+    margin-bottom: 5px; /* Adiciona um pequeno espaçamento abaixo da label */
+}
+
+/* Estilo dos campos de entrada de texto, email e senha */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 93%; /* Faz o campo ocupar toda a largura disponível */
+    padding: 10px; /* Adiciona espaçamento interno para melhor usabilidade */
+    margin-top: 5px; /* Espaçamento acima do campo */
+    margin-bottom: 15px; /* Espaçamento abaixo do campo */
+    border: 1px solid #ddd; /* Define uma borda clara ao redor dos campos */
+    border-radius: 25px; /* Arredonda os cantos dos campos */
+    font-family: Arial, sans-serif; /* Define a fonte dos campos */
+    font-size: 1em; /* Define o tamanho do texto */
+    background-color: #fff; /* Fundo branco para contraste com o fundo bege */
+}
+
+/* Estilo do botão de envio do formulário */
+/* Estilo do botão de envio do formulário */
+input[type="submit"] {
+    display: block; /* Faz o botão ser um bloco para poder aplicar margens */
+    width: 40%; /* Define a largura do botão */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    padding: 10px; /* Adiciona espaçamento interno para um botão maior */
+    background-color:rgb(240, 80, 22); /* Fundo laranja do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 50px; /* Arredonda os cantos do botão */
+    color: #fff; /* Define o texto do botão na cor branca */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    font-size: 1.1em; /* Aumenta um pouco o tamanho do texto */
+    cursor: pointer; /* Exibe o cursor de mão ao passar sobre o botão */
+    transition: background-color 0.3s; /* Aplica uma transição suave no hover */
+}
+
+/* Estilo de hover para o botão de envio */
+input[type="submit"]:hover {
+    background-color:#444; /* Fundo laranja mais escuro ao passar o mouse */
+    padding: 13px;
+    font-size:1.3em ;
+    border-radius: 50px;
+}
+.form-content h4{
+    color: #333;
+}
+
+
+/* ----------------------------------Formulário de alteração---------------------------- */
+
+
+
+.container-Alterar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#4682B4;
+    font-family: Arial, sans-serif;
+    height: 600px;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.alterar {
+    
+    width: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    height: 550px;
+    border: 2px solid #444;
+   
+}
+
+.alterar legend {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #424140;
+    padding: 8px;
+    border-radius: 8px;
+    
+}
+
+.alterar label {
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.alterar input[type="text"],
+.alterar input[type="email"],
+.alterar input[type="text"],
+.alterar input[type="password"] {
+    width: 92%;
+    padding: 8px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color:aliceblue; /* Bege */
+    color: #333;
+    font-size: 16px;
+}
+
+#submit-input {
+    width: 60%;
+    padding: 12px;
+    background-color: rgb(240, 80, 22);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    
+}
+
+#submit-input:hover {
+    background-color: #444;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+.alterar .perfil-container {
+   
+display:inline;
+
+    
+}
+.alterar .perfil-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre os grupos de rádio */
+}
+
+.alterar .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaço entre o botão de rádio e o texto */
+}
+
+.alterar label {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+
+/* ________________________formulário aluno____________________ */
+
+.form-aluno {
+    width: 100%;
+    max-width: 500px;
+    background-color: #4682B4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.fieldset-aluno {
+    border: none;
+    padding: 0;
+}
+
+/* Títulos e rótulos */
+h2 {
+    color: #070707;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3, h4 {
+    color: #0e0d0d;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilos para cada campo usando IDs */
+#cpf_responsavel, #nome, #ano_ingresso, #data_nascimento, #tipo_sanguineo, #deficiencia, #alergia {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Label styling específico */
+label[for="cpf_responsavel"], label[for="nome"], label[for="ano_ingresso"], 
+label[for="data_nascimento"], label[for="tipo_sanguineo"], label[for="deficiencia"], 
+label[for="alergia"] {
+    display: block;
+    font-weight: bold;
+    color: #070707;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+/* Estilos para o campo select */
+#tipo_sanguineo {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    padding-right: 20px;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color:#e2750e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: coral;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* ------------------------------ Turmas que são visualizadas pelo adm */
+
+
+.turmas-container {
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro do container */
+    background-color:#4682B4;
+    border-radius: 15px;
+    width: 50%; /* Ajusta a largura para uma apresentação mais equilibrada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destaque */
+    margin-top: 10%;
+}
+
+.turmas-container h2 {
+    color:#fff; /* Altera a cor do título para branco */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.btn_turmas {
+    display: block;
+    width: 80%; /* Reduz a largura do botão para deixar espaço nas laterais */
+    padding: 12px;
+    margin: 8px 0; /* Espaçamento entre os botões */
+    background-color: rgb(233, 94, 44);
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold; /* Destaca o texto do botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza o efeito de hover */
+}
+
+.btn_turmas:hover {
+    background-color:coral;
+    transform: scale(1.02); /* Efeito leve de zoom ao passar o mouse */
+}
+
+.turmas-container a {
+    text-decoration: none; /* Remove a linha de sublinhado dos links */
+    width: 100%; /* Faz com que o link ocupe toda a largura do botão */
+    display: flex;
+    justify-content: center; /* Centraliza o link no container */
+}
+
+
